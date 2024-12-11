@@ -30,7 +30,8 @@
 }
 
 .activePhoto img {
-  width: 350px;
+  width: 90%;
+  max-width: 350px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -53,11 +54,11 @@
 }
 
 .prevButton {
-  left: -50px;
+  left: 1px;
 }
 
 .nextButton {
-  right: -50px;
+  right: 1px;
 }
 
 .thumbnailContainer {
@@ -80,4 +81,14 @@
 .thumbnail.active {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 600px) {
+  .prevButton {
+    left: -50px;
+  }
+
+  .nextButton {
+    right: -50px;
+  }
 }

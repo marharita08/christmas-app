@@ -4,8 +4,14 @@
   z-index: 1;
   margin: 50px auto;
   padding: 20px;
-  width: 70%;
+  width: 90%;
   background-color: white;
   border-radius: 10px;
   min-height: calc(100vh - 100px);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
 }
