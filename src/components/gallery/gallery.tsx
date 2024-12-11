@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { SectionHeader } from "../section-header/section-header";
 import photo1 from "../../assets/photo1.jpg";
 import photo2 from "../../assets/photo2.jpg";
 import photo3 from "../../assets/photo3.jpg";
@@ -35,10 +36,7 @@ const Gallery: React.FC = () => {
 
   return (
     <div className={styles.gallery}>
-      <div className={styles.galleryHeader}>
-        <h2 className={styles.title}>Gallery</h2>
-        <p className={styles.text}>Enjoy my festive gallery!</p>
-      </div>
+      <SectionHeader title="Gallery" text="Enjoy my festive gallery!" />
       <div className={styles.activePhoto}>
         <button className={styles.prevButton} onClick={handlePrev}>
           ❮

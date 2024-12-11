@@ -1,5 +1,4 @@
 .gallery {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,10 +61,7 @@
 }
 
 .thumbnailContainer {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: none;
 }
 
 .thumbnail {
@@ -90,5 +86,12 @@
 
   .nextButton {
     right: -50px;
+  }
+
+  .thumbnailContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
