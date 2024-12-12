@@ -21,7 +21,7 @@ const Gallery: React.FC = () => {
 
   return (
     <SectionContainer>
-      <SectionHeader title="Gallery" text="Enjoy my festive gallery!" />
+      <SectionHeader title="Gallery" text="Enjoy festive gallery!" />
       <div className={styles.activePhoto}>
         <button className={styles.prevButton} onClick={handlePrev}>
           ❮
