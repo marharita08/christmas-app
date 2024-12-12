@@ -1,25 +1,10 @@
 import { useState } from "react";
 
-import { SectionHeader } from "../section-header/section-header";
-import photo1 from "../../assets/photo1.jpg";
-import photo2 from "../../assets/photo2.jpg";
-import photo3 from "../../assets/photo3.jpg";
-import photo4 from "../../assets/photo4.jpg";
-import photo5 from "../../assets/photo5.jpg";
-import photo6 from "../../assets/photo6.jpg";
-import photo7 from "../../assets/photo7.jpg";
+import { SectionHeader } from "@/components/section-header/section-header.tsx";
+import { SectionContainer } from "@/components/section-container/section-container";
+import { photos } from "@/configs/photos";
 
 import styles from "./gallery.module.css";
-
-const photos = [
-  { id: 1, src: photo1, alt: "photo 1" },
-  { id: 2, src: photo2, alt: "photo 2" },
-  { id: 3, src: photo3, alt: "photo 3" },
-  { id: 4, src: photo4, alt: "photo 4" },
-  { id: 5, src: photo5, alt: "photo 5" },
-  { id: 6, src: photo6, alt: "photo 6" },
-  { id: 7, src: photo7, alt: "photo 7" }
-];
 
 const Gallery: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -35,7 +20,7 @@ const Gallery: React.FC = () => {
   };
 
   return (
-    <div className={styles.gallery}>
+    <SectionContainer>
       <SectionHeader title="Gallery" text="Enjoy my festive gallery!" />
       <div className={styles.activePhoto}>
         <button className={styles.prevButton} onClick={handlePrev}>
@@ -59,7 +44,7 @@ const Gallery: React.FC = () => {
           />
         ))}
       </div>
-    </div>
+    </SectionContainer>
   );
 };
 

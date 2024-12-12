@@ -1,4 +1,5 @@
-import { Snowflake } from "../snowflake/snowflake";
+import { Snowflake } from "@/components/snowflake/snowflake";
+
 import styles from "./snowfall.module.css";
 
 const Snowfall: React.FC = () => {

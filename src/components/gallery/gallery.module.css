@@ -1,25 +1,3 @@
-.gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.galleryHeader {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-}
-
-.title {
-  color: #333;
-}
-
-.text {
-  color: #666;
-}
-
 .activePhoto {
   position: relative;
   display: flex;
