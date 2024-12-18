@@ -1,5 +1,31 @@
+.header {
+  height: 87px;
+  margin-top: 48px;
+}
+
 .title {
-  margin-top: 30px;
   text-align: center;
-  color: #333;
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+  color: #ff4b5c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #2d4059;
+}
+
+@media screen and (min-width: 600px) {
+  .title {
+    font-size: 50px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .header {
+    height: 111px;
+  }
 }
