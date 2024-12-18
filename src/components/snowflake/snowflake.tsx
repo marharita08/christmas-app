@@ -19,8 +19,7 @@ const Snowflake: React.FC<{ delay: number }> = ({ delay }) => {
         position: "absolute",
         left: y.to(y => `${startX + amplitude * Math.sin(y / 10)}vw`),
         top: y.to(y => `${y}vh`),
-        fontSize: `${size}px`,
-        color: "white"
+        fontSize: `${size}px`
       }}
     >
       ❄️

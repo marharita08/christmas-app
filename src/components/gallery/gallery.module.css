@@ -1,8 +1,11 @@
 .activePhoto {
+  width: 90%;
+  max-width: 350px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 350 / 421;
   gap: 10px;
 }
 
@@ -47,14 +50,6 @@
   height: auto;
   cursor: pointer;
   border-radius: 5px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.thumbnail.active {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (min-width: 600px) {
