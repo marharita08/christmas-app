@@ -6,10 +6,10 @@
 }
 
 .title {
-  color: #333;
+  color: var(--section-title);
 }
 
 .text {
   text-align: center;
-  color: #666;
+  color: var(--section-subtitle);
 }

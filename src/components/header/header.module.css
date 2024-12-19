@@ -7,7 +7,7 @@
   text-align: center;
   font-family: "Great Vibes", cursive;
   font-size: 42px;
-  color: #ff4b5c;
+  color: var(--main-title);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -15,7 +15,7 @@
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: #2d4059;
+  color: var(--main-subtitle);
 }
 
 @media screen and (min-width: 600px) {

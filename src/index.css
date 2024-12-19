@@ -9,6 +9,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --background: #1a1a2e;
+  --white: #fff;
+  --main-title: #ff4b5c;
+  --main-subtitle: #2d4059;
+  --section-title: #333;
+  --section-subtitle: #666;
 }
 
 body,

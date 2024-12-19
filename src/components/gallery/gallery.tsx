@@ -13,7 +13,7 @@ const Gallery: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(active => (active + 1) % photos.length);
-    }, 5000);
+    }, 6000);
 
     return () => {
       clearInterval(interval);
@@ -54,7 +54,7 @@ const Gallery: React.FC = () => {
       <SectionHeader title="Gallery" text="Enjoy festive gallery!" />
       <div className={styles.activePhoto}>
         <button className={styles.prevButton} onClick={handlePrev}>
-          ❮
+          &#11164;
         </button>
 
         {transitions((styles, index) => (
@@ -68,7 +68,7 @@ const Gallery: React.FC = () => {
           />
         ))}
         <button className={styles.nextButton} onClick={handleNext}>
-          ❯
+          &#11166;
         </button>
       </div>
       <div className={styles.thumbnailContainer}>
