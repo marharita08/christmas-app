@@ -4,7 +4,7 @@ import { Gallery } from "./components/gallery/gallery";
 import { Music } from "./components/music/music";
 import { Header } from "./components/header/header";
 import { Garland } from "./components/garland/garland";
-import { Candies } from "./components/candies/candies";
+import { AnimatedImages } from "./components/animated-images/animated-images";
 import styles from "./App.module.css";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
         <ContentContainer>
           <>
-            <Candies />
+            <AnimatedImages />
             <Header />
             <main className={styles.main}>
               <Gallery />
