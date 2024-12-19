@@ -5,6 +5,7 @@ import { Music } from "./components/music/music";
 import { Header } from "./components/header/header";
 import { Garland } from "./components/garland/garland";
 import { AnimatedImages } from "./components/animated-images/animated-images";
+import { Movies } from "./components/movies/movies";
 import styles from "./App.module.css";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <>
       <div className={styles.container}>
         <Snowfall />
-        <Garland />
+        <Garland isTop={true} />
 
         <ContentContainer>
           <>
@@ -21,9 +22,11 @@ function App() {
             <main className={styles.main}>
               <Gallery />
               <Music />
+              <Movies />
             </main>
           </>
         </ContentContainer>
+        <Garland isTop={false} />
       </div>
     </>
   );

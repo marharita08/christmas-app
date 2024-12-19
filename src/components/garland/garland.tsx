@@ -6,7 +6,11 @@ import { Bulb } from "@/components/bulb/bulb";
 import { colorValues, colors } from "./garland.colors";
 import styles from "./garland.module.css";
 
-const Garland: React.FC = () => {
+type Properties = {
+  isTop: boolean;
+};
+
+const Garland: React.FC<Properties> = ({ isTop }) => {
   const [activeGroup, setActiveGroup] = useState(0);
   const [garlandWidth, setGarlandWidth] = useState("90%");
   const [waves, setWaves] = useState(5);
@@ -31,6 +35,7 @@ const Garland: React.FC = () => {
   }, [width]);
 
   useEffect(() => {
+    console.log(isTop);
     const interval = setInterval(() => {
       setActiveGroup(prevGroup => (prevGroup + 1) % 2);
     }, 1000);
@@ -63,7 +68,9 @@ const Garland: React.FC = () => {
   );
 
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${isTop ? styles.top : styles.bottom}`}
+    >
       <svg
         viewBox={`0 0 ${(parseFloat(garlandWidth) * width) / 100} ${height}`}
         xmlns="http://www.w3.org/2000/svg"

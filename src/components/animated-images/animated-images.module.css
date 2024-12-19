@@ -52,11 +52,11 @@
   .firstBox {
     display: block;
   }
-  
+
   .secondBox {
     display: block;
   }
-  
+
   .thirdBox {
     display: block;
   }
@@ -70,31 +70,31 @@
   .firstCandy {
     left: 30px;
   }
-  
+
   .secondCandy {
     left: 50px;
   }
-  
+
   .thirdCandy {
     right: 200px;
   }
-  
+
   .fourthCandy {
     right: 50px;
   }
-  
+
   .fifthCandy {
     left: 20px;
   }
-  
+
   .firstBox {
     right: 20px;
   }
-  
+
   .secondBox {
     left: 30px;
   }
-  
+
   .thirdBox {
     right: 10px;
   }

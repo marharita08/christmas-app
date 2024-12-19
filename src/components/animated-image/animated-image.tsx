@@ -6,13 +6,15 @@ type Properties = {
   initialValue: string;
   finalValue: string;
   width: string;
+  duration?: number;
 };
 
 const AnimatedImage: React.FC<Properties> = ({
   src,
   initialValue,
   finalValue,
-  width
+  width,
+  duration = 1500
 }) => {
   const [currentTransform, setCurrentTransform] = useState(initialValue);
 
@@ -21,7 +23,7 @@ const AnimatedImage: React.FC<Properties> = ({
     onChange: e => {
       setCurrentTransform(e.value.transform);
     },
-    config: { duration: 1500 }
+    config: { duration }
   }));
 
   const handleMouseEnter = () => {
