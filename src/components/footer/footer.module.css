@@ -1,0 +1,28 @@
+.footer {
+  margin-bottom: 30px;
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  color: #2d4059;
+}
+
+.box,
+.candy {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .box,
+  .candy {
+    display: block;
+  }
+}

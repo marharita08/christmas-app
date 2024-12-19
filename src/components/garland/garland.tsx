@@ -35,7 +35,6 @@ const Garland: React.FC<Properties> = ({ isTop }) => {
   }, [width]);
 
   useEffect(() => {
-    console.log(isTop);
     const interval = setInterval(() => {
       setActiveGroup(prevGroup => (prevGroup + 1) % 2);
     }, 1000);

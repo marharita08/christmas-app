@@ -6,6 +6,7 @@ import { Header } from "./components/header/header";
 import { Garland } from "./components/garland/garland";
 import { AnimatedImages } from "./components/animated-images/animated-images";
 import { Movies } from "./components/movies/movies";
+import { Footer } from "./components/footer/footer";
 import styles from "./App.module.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Music />
               <Movies />
             </main>
+            <Footer />
           </>
         </ContentContainer>
         <Garland isTop={false} />

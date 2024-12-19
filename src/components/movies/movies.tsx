@@ -27,6 +27,7 @@ const Movies: React.FC = () => {
             finalValue="scale(1.05)"
             width="200px"
             duration={300}
+            key={image}
           />
         ))}
       </div>
