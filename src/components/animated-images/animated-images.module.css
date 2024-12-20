@@ -1,0 +1,121 @@
+.candy,
+.box {
+  position: absolute;
+  z-index: 100;
+}
+
+.firstCandy {
+  display: none;
+  top: 80px;
+  left: 5px;
+}
+
+.secondCandy {
+  top: 250px;
+  left: 5px;
+}
+
+.thirdCandy {
+  top: 180px;
+  right: 5px;
+}
+
+.fourthCandy {
+  top: 330px;
+  right: 5px;
+}
+
+.fifthCandy {
+  top: 580px;
+  left: 5px;
+}
+
+.firstBox {
+  top: 50px;
+  right: 5px;
+  display: none;
+}
+
+.secondBox {
+  top: 400px;
+  left: 5px;
+  display: none;
+}
+
+.thirdBox {
+  top: 540px;
+  right: 5px;
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .firstBox {
+    display: block;
+  }
+
+  .secondBox {
+    display: block;
+  }
+
+  .thirdBox {
+    display: block;
+  }
+
+  .firstCandy {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .firstCandy {
+    left: 30px;
+  }
+
+  .secondCandy {
+    left: 50px;
+  }
+
+  .thirdCandy {
+    right: 200px;
+  }
+
+  .fourthCandy {
+    right: 50px;
+  }
+
+  .fifthCandy {
+    left: 20px;
+  }
+
+  .firstBox {
+    right: 20px;
+  }
+
+  .secondBox {
+    left: 30px;
+  }
+
+  .thirdBox {
+    right: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .firstBox {
+    right: 100px;
+  }
+
+  .secondCandy {
+    left: 190px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .fifthCandy {
+    left: 170px;
+  }
+
+  .thirdBox {
+    right: 150px;
+  }
+}

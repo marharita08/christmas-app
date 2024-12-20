@@ -1,0 +1,15 @@
+.container {
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--background);
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}

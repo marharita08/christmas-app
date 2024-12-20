@@ -1,0 +1,70 @@
+.activePhoto {
+  width: 90%;
+  max-width: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 350 / 421;
+  gap: 10px;
+}
+
+.activePhoto img {
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prevButton {
+  left: 1px;
+}
+
+.nextButton {
+  right: 1px;
+}
+
+.thumbnailContainer {
+  display: none;
+}
+
+.thumbnail {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .prevButton {
+    left: -50px;
+  }
+
+  .nextButton {
+    right: -50px;
+  }
+
+  .thumbnailContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
