@@ -26,5 +26,5 @@ A festive Christmas-themed web application. This app brings holiday cheer with a
    ```
 4. Open your browser and navigate to:
    ```
-   http://localhost:5173
+   http://localhost:5173/christmas-app
    ```
