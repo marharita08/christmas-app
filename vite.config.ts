@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
-import { ghPages } from 'vite-plugin-gh-pages';
+import { ghPages } from "vite-plugin-gh-pages";
 
 export default defineConfig({
   plugins: [react(), ghPages()],
@@ -10,5 +10,5 @@ export default defineConfig({
       "@": resolve(__dirname, "src")
     }
   },
-  base: '/christmas-app/',
+  base: "/christmas-app/"
 });
