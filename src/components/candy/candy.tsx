@@ -1,4 +1,4 @@
-import { AnimatedImage } from "../animated-image/animated-image";
+import { AnimatedImage } from "@/components/animated-image/animated-image";
 import candyImg from "@/assets/christmas_candy.png";
 
 const Candy: React.FC = () => {

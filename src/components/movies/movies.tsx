@@ -1,16 +1,9 @@
-import { SectionContainer } from "../section-container/section-container";
-import { SectionHeader } from "../section-header/section-header";
+import { SectionContainer } from "@/components/section-container/section-container";
+import { SectionHeader } from "@/components/section-header/section-header";
+import { AnimatedImage } from "@/components/animated-image/animated-image";
 
-import { AnimatedImage } from "../animated-image/animated-image";
-
-import frozenImg from "@/assets/frozen.jpeg";
-import grinchImg from "@/assets/grinch.jpg";
-import klausImg from "@/assets/klaus.jpg";
-import riseOfTheGuardiansImg from "@/assets/rise-of-the-guardians.jpg";
-
+import { images } from "./images";
 import styles from "./movies.module.css";
-
-const images = [frozenImg, grinchImg, klausImg, riseOfTheGuardiansImg];
 
 const Movies: React.FC = () => {
   return (

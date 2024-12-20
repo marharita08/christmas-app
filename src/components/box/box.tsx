@@ -1,4 +1,4 @@
-import { AnimatedImage } from "../animated-image/animated-image";
+import { AnimatedImage } from "@/components/animated-image/animated-image";
 import boxImg from "@/assets/gift-box.png";
 
 const Box: React.FC = () => {

@@ -1,5 +1,5 @@
-import { Candy } from "../candy/candy";
-import { Box } from "../box/box";
+import { Candy } from "@/components/candy/candy";
+import { Box } from "@/components/box/box";
 
 import styles from "./animated-images.module.css";
 

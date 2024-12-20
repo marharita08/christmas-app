@@ -1,5 +1,5 @@
-import { Box } from "../box/box";
-import { Candy } from "../candy/candy";
+import { Box } from "@/components/box/box";
+import { Candy } from "@/components/candy/candy";
 
 import styles from "./footer.module.css";
 

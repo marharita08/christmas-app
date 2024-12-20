@@ -3,8 +3,8 @@ import { animated, useTransition, useSprings } from "@react-spring/web";
 
 import { SectionHeader } from "@/components/section-header/section-header.tsx";
 import { SectionContainer } from "@/components/section-container/section-container";
-import { photos } from "@/configs/photos";
 
+import { photos } from "./photos";
 import styles from "./gallery.module.css";
 
 const Gallery: React.FC = () => {
